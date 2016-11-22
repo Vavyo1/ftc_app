@@ -118,7 +118,7 @@ public class TeleOp_Nathan extends OpMode
         leftPower = -gamepad1.left_stick_y;
         rightPower = -gamepad1.right_stick_y;
 
-        if (gamepad1.dpad_up) {
+        if (gamepad1.left_bumper) {
             leftMotor.setPower(rightPower);
             rightMotor.setPower(leftPower);
             direction = "Reverse";
